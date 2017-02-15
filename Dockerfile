@@ -38,6 +38,8 @@ RUN apk --no-cache add \
     mkdir ~/.aws &&\
     chmod 700 ~/.aws
 
+RUN apk add zip
+
 # Expose volume for adding credentials
 VOLUME ["~/.aws"]
 
